@@ -4,14 +4,14 @@
 This is a simple yet powerful Scientific Calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations along with advanced mathematical functions like trigonometry (sin, cos, tan), logarithm, square root, exponential (10^x), and power (x^y). The JavaScript logic is embedded directly into the HTML file, making it easy to manage without separate script files.
 
 #  ⚡ Features
-✅ Basic arithmetic operations (+, -, ×, ÷)
-✅ Trigonometric functions (sin, cos, tan) (works in degrees)
-✅ Logarithm (log10 x)
-✅ Square root (√x)
-✅ Exponential (EXP = 10^x)
-✅ Power function (xʸ)
-✅ Clean and modern UI with CSS styling
-✅ Responsive design
+✅ Basic arithmetic operations (+, -, ×, ÷)  
+✅ Trigonometric functions (sin, cos, tan) (works in degrees)  
+✅ Logarithm (log10 x)  
+✅ Square root (√x)  
+✅ Exponential (EXP = 10^x)  
+✅ Power function (xʸ)   
+✅ Clean and modern UI with CSS styling  
+✅ Responsive design   
 
 
 # 🎯 How to Use
@@ -30,7 +30,7 @@ This is a simple yet powerful Scientific Calculator built using HTML, CSS, and J
 3. JavaScript (for functionality)
 
 # 📸 Preview
-![calc](https://github.com/user-attachments/assets/63c8e761-06e9-49ae-beb2-c84179162d32)
+![calc](https://github.com/user-attachments/assets/d8aaa07d-fe50-46da-b07e-dccccfb665c9)
 
 
 # 📌 How to Run
