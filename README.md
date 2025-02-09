@@ -1,9 +1,9 @@
-## Digital-Calculator
+# Digital-Calculator
 
-# 📌 Description
+# Description
 This is a simple yet powerful Scientific Calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations along with advanced mathematical functions like trigonometry (sin, cos, tan), logarithm, square root, exponential (10^x), and power (x^y). The JavaScript logic is embedded directly into the HTML file, making it easy to manage without separate script files.
 
-#  ⚡ Features
+# Features
 ✅ Basic arithmetic operations (+, -, ×, ÷)  
 ✅ Trigonometric functions (sin, cos, tan) (works in degrees)  
 ✅ Logarithm (log10 x)  
@@ -14,7 +14,7 @@ This is a simple yet powerful Scientific Calculator built using HTML, CSS, and J
 ✅ Responsive design   
 
 
-# 🎯 How to Use
+# How to Use
 1. Click on the buttons to enter numbers and operations.
 2. Use sin, cos, tan for trigonometric calculations (input in degrees).
 3. Use log for logarithm (base 10).
@@ -24,21 +24,21 @@ This is a simple yet powerful Scientific Calculator built using HTML, CSS, and J
 7. Press = to evaluate the expression.
 8. Press AC to clear the display.
 
-# 🚀 Technologies Used
+# Technologies Used
 1. HTML (for structure)
 2. CSS (for styling)
 3. JavaScript (for functionality)
 
-# 📸 Preview
+# Preview
 ![calc](https://github.com/user-attachments/assets/d8aaa07d-fe50-46da-b07e-dccccfb665c9)
 
 
-# 📌 How to Run
+# How to Run
 1. Clone this repository: git clone https://github.com/Areen-Zainab/Digital-Calculator.git
 2. Open calc.html in a browser
 3. Start Calculating
 
-# 💡 Future Improvements
+# Future Improvements
 1. Add history feature to store previous calculations.
 2. Support for radian mode in trigonometric functions.
 3. Keyboard input support for better usability.
