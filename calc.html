@@ -1,0 +1,137 @@
+<!--Areen Zainab-->
+<!--22i-1115-->
+<!--A-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areen's Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="calculateSin()">sin</button>
+            <button onclick="calculateCos()">cos</button>
+            <button onclick="calculateTan()">tan</button>
+            <button onclick="calculateLog()">log</button>
+
+            <button onclick="calculateE()">e</button>
+            <button onclick="calculatePower()">^</button>
+            <button onclick="showKaro('{')">{</button>
+            <button onclick="showKaro('}')">}</button>
+
+            <button onclick="calculateSqrt()">&#8730</button>
+            <button onclick="showKaro('(')">(</button>
+            <button onclick="showKaro(')')">)</button>
+            <button onclick="showKaro('/')">÷</button>
+
+            <button onclick="showKaro('7')">7</button>
+            <button onclick="showKaro('8')">8</button>
+            <button onclick="showKaro('9')">9</button>
+            <button onclick="showKaro('*')">×</button>
+
+            <button onclick="showKaro('4')">4</button>
+            <button onclick="showKaro('5')">5</button>
+            <button onclick="showKaro('6')">6</button>
+            <button onclick="showKaro('-')">−</button>
+
+            <button onclick="showKaro('1')">1</button>
+            <button onclick="showKaro('2')">2</button>
+            <button onclick="showKaro('3')">3</button>
+            <button onclick="showKaro('+')">+</button>
+
+            <button onclick="showKaro('0')">0</button>
+            <button onclick="showKaro('.')">.</button>
+            <button onclick="khatamKaro()">AC</button>
+            <button onclick="calculate()">=</button>
+
+        
+        </div>
+    </div>
+
+    <script>
+        function showKaro(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function khatamKaro() {
+            document.getElementById("display").value = "";
+        }
+
+        function calculate() {
+            try {
+                let result = eval(document.getElementById("display").value);
+                document.getElementById("display").value = result;
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function calculateSin() {
+            try {
+                let value = parseFloat(document.getElementById("display").value);
+                let radians = value * (Math.PI / 180); // Convert to radians
+                document.getElementById("display").value = Math.sin(radians).toFixed(6);
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function calculateCos() {
+            try {
+                let value = parseFloat(document.getElementById("display").value);
+                let radians = value * (Math.PI / 180);
+                document.getElementById("display").value = Math.cos(radians).toFixed(6);
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function calculateTan() {
+            try {
+                let value = parseFloat(document.getElementById("display").value);
+                let radians = value * (Math.PI / 180);
+                document.getElementById("display").value = Math.tan(radians).toFixed(6);
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function calculateLog() {
+            try {
+                let value = parseFloat(document.getElementById("display").value);
+                document.getElementById("display").value = Math.log10(value).toFixed(6);
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function calculateSqrt() {
+            try {
+                let value = parseFloat(document.getElementById("display").value);
+                document.getElementById("display").value = Math.sqrt(value).toFixed(6);
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+
+        function calculatePower() {
+            let base = document.getElementById("display").value;
+            document.getElementById("display").value = base + "**";
+        }
+
+        function calculateE() {
+            try {
+                let inputValue = parseFloat(document.getElementById("display").value);
+                document.getElementById("display").value = Math.exp(inputValue).toFixed(6); 
+            } catch (error) {
+                document.getElementById("display").value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
